@@ -73,6 +73,6 @@ test('handles server error code 418', async () => {
         }),
     )
     render(<App />)
-    let film=await screen.findByText(/418 I'm a tea pot 🫖, silly/i)
+    let film=await screen.findByText(/418 I'm a tea pot/i)
     expect(film).toBeInTheDocument();
 })

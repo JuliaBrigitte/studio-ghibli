@@ -17,8 +17,7 @@ function App() {
                 }
                 else if (418 === response.status)
                 {
-                    setFilm("" +
-                        "")
+                    setFilm("418 I'm a tea pot")
                 }
                 let result=await response.json();
                 setFilm(result.title);
